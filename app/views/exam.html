@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <h1>{{question.title}}</h1>
+  </div>
+
+  <div>
+    <ul>
+      <li data-ng-repeat="option in question.options">
+        <input type="radio"> {{option}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class"row">
+  <button class="btn btn-primary" data-ng-click="previousQuestion()">Anterior</button>
+  <button class="btn btn-success" data-ng-click="finishExam()">Finalizar</button>
+  <button class="btn btn-primary" data-ng-click="nextQuestion()">Próxima</button>
+</div>
