@@ -24,11 +24,16 @@ angular.module('cersApp')
 
     $scope.nextQuestion = function() {
       currentQuestion += 1;
-      $scope.question = questions[currentQuestion % questions.length];
+      $scope.question = getQuestion(currentQuestion);
     };
 
     $scope.previousQuestion = function() {
       currentQuestion -= 1;
-      $scope.question = questions[currentQuestion % questions.length];
+      $scope.question = getQuestion(currentQuestion);
     };
+
+    var getQuestion = function(currentQuestion) {
+      var position = Math.abs(currentQuestion % questions.length);
+      return questions[position];
+    }
   });
