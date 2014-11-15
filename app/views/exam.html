@@ -1,3 +1,9 @@
+<div class="row upper-controls">
+  <button class="btn btn-primary" data-ng-click="previousQuestion()">Anterior</button>
+  <button class="btn btn-success" data-ng-click="finishExam()">Finalizar</button>
+  <button class="btn btn-primary" data-ng-click="nextQuestion()">Próxima</button>
+</div>
+
 <div>
   <div>
     <h1>{{question.title}}</h1>
@@ -12,7 +18,7 @@
   </div>
 </div>
 
-<div class"row">
+<div class="row lower-controls">
   <button class="btn btn-primary" data-ng-click="previousQuestion()">Anterior</button>
   <button class="btn btn-success" data-ng-click="finishExam()">Finalizar</button>
   <button class="btn btn-primary" data-ng-click="nextQuestion()">Próxima</button>

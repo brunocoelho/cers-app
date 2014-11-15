@@ -1,3 +1,7 @@
 .exam {
   margin-top: 10px;
 }
+
+#alternatives li {
+  list-style: none;
+}
