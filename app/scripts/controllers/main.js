@@ -7,6 +7,4 @@
  * # MainCtrl
  * Controller of the cersApp
  */
-angular.module('cersApp')
-  .controller('MainCtrl', function ($scope) {
-  });
+angular.module('cersApp').controller('MainCtrl', function () {});

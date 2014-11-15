@@ -31,6 +31,10 @@ angular
         templateUrl: 'views/exam.html',
         controller: 'ExamCtrl'
       })
+      .when('/grading', {
+        templateUrl: 'views/grading.html',
+        controller: 'GradingCtrl'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'

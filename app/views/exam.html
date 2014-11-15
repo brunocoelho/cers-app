@@ -12,7 +12,8 @@
   <div>
     <ul>
       <li data-ng-repeat="option in question.options">
-        <input type="radio" name="option"> {{option}}
+        <label for="{{option}}">{{option}}</label>
+        <input data-ng-click="saveAnswer($index)" type="radio" id="{{option}}" name="option">
       </li>
     </ul>
   </div>

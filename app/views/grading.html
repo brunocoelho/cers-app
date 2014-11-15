@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="question in questions" data-ng-class="{info: isCorrect(question), danger: !isCorrect(question)}">
+      <td>
+        <div>
+          {{question.title}}</td>
+          <span data-ng-show="isCorrect(question)" class="glyphicon"
+          data-ng-class="{'glyphicon-ok': isCorrect(question), 'glyphicon-remove': !isCorrect(question)}">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

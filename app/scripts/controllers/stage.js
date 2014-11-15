@@ -16,7 +16,7 @@ angular.module('cersApp')
     ];
 
     $scope.loadExam = function(id) {
-      $location.path("/exam/" + id);
-    }
+      $location.path('/exam/' + id);
+    };
 
   });
