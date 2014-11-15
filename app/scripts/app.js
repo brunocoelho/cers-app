@@ -23,6 +23,14 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/stage', {
+        templateUrl: 'views/stage.html',
+        controller: 'StageCtrl'
+      })
+      .when('/exam/:id', {
+        templateUrl: 'views/exam.html',
+        controller: 'ExamCtrl'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
